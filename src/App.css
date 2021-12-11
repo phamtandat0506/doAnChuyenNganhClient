@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+body {
+    font-family: "Trirong", sans-serif;
+  }
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +40,301 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+/* test */
+
+
+
+.bgr-blue 
+{
+    background-color: rgb(16, 37, 104);
+}
+
+
+.fs-30
+{
+    font-size: 30px;
+}
+
+.fs-20
+{
+    font-size: 20px;
+}
+
+.container h2
+{
+    text-align: center;
+}
+
+.mrl-5
+{
+    margin-left: 5px;
+}
+
+.mr-10
+{
+    margin-right: -20px;
+}
+
+.mr-top
+{
+    margin-top: 10px;
+} 
+
+.w-100 
+{
+    width: 100%;
+}
+
+.chain
+{
+    margin: 0 auto;
+    margin-top: 4px;
+    text-align: center;
+}
+
+.grid-chain-bottom h6
+{
+    margin: 0;
+    font-size: 1.5em;
+    color: black;
+    font-weight: 700;
+    padding: 0.8em 0.5em 0;
+}
+
+.grid-chain-bottom h6 a:hover 
+{
+    text-decoration: none;
+    color: brown;
+}
+
+.txt-pro a:hover
+{
+    text-decoration: none;
+    color: brown;
+}
+
+.actual
+{
+    color: rgb(16, 37, 104);
+    font-size: 1.2em;
+}
+
+.reducedfrom 
+{
+    color: #5555;
+    text-decoration: line-through;
+    margin-right: 8%;
+    font-size: 1.1em;
+}
+
+.dolor-grid span 
+{
+    margin-left: 12px;
+}
+
+.br 
+{
+    margin: 10px;
+    border: 2px solid #ddd;
+}
+
+.get-card
+{
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.mrl-10
+{
+    margin-left: 10px;
+}
+
+.mrr-10
+{
+    margin-left: -10px;
+}
+
+.mrl-20
+{
+    margin-left: 20px;
+}
+
+.tag-a 
+{
+    margin-left: 15px;
+}
+
+.tag-a:hover
+{
+    color: saddlebrown;
+    text-decoration: none;
+}
+
+
+footer {
+    background-color: rgb(105, 105, 105);
+    color: rgb(163, 185, 255);
+    padding: 15px;
+    font-size: 10px;
+}
+
+.list-sty
+{
+    list-style: none;
+}
+
+.price-sty
+{
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+}
+
+.br-grey 
+{
+    background-color: rosybrown;
+}
+
+.pro-lq
+{
+    width: 50px;
+    height: 45px;
+}
+
+.brl 
+{
+    border-left: #ddd solid 1px;
+}
+
+.brr 
+{
+    border-right:#ddd solid 1px ;
+}
+
+.bold-txt
+{
+    font-weight: bold;
+}
+
+.txt-pro
+{
+    text-align: justify;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.txt-color-blue
+{
+    color: cyan;
+}
+
+.txt-color-yelow
+{
+    color: rgb(233, 236, 3);
+}
+.txt-color-grey
+{
+    color: rgb(168, 168, 168);
+}
+.txt-color-red
+{
+    color: rgb(255, 0, 0);
+}
+
+
+.txt-size 
+{
+    font-size: 10px;
+}
+
+/****************************************************/
+body
+{
+    margin: 0px 10px 10px 10px;
+}
+
+.img-sz 
+{
+    height: 60px;
+    width: 100px;
+}
+.mr-5{
+    margin: 3px;
+}
+
+/*/////////////////////////////////////////////////////////////*/
+
+.span-or {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -2px;
+    margin-left: -25px;
+    background-color: #fff;
+    width: 50px;
+    text-align: center;
+  }
+  .hr-or {
+    background-color: #cdcdcd;
+    height: 1px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+footer.nb-footer {
+background: #222;
+border-top: 4px solid rgb(16, 37, 104); }
+footer.nb-footer .about {
+margin: 0 auto;
+margin-top: 40px;
+max-width: 1170px;
+text-align: center; }
+footer.nb-footer .about p {
+font-size: 8px;
+color: #999;
+margin-top: 30px; }
+footer.nb-footer .about .social-media {
+margin-top: 15px; }
+footer.nb-footer .about .social-media ul li a {
+display: inline-block;
+width: 45px;
+height: 45px;
+line-height: 45px;
+border-radius: 50%;
+font-size: 8px;
+color: rgb(16, 37, 104);
+border: 1px solid rgba(255, 255, 255, 0.3); }
+footer.nb-footer .about .social-media ul li a:hover {
+background: rgb(16, 37, 104);
+color: #fff;
+border-color: rgb(16, 37, 104); }
+footer.nb-footer .footer-info-single {
+margin-top: 30px; }
+footer.nb-footer .footer-info-single .title {
+color: #aaa;
+text-transform: uppercase;
+font-size: 13px;
+border-left: 4px solid rgb(16, 37, 104);
+padding-left: 5px; }
+footer.nb-footer .footer-info-single ul li a {
+display: block;
+color: #aaa;
+padding: 2px 0; }
+footer.nb-footer .footer-info-single ul li a:hover {
+color: rgb(16, 37, 104); }
+footer.nb-footer .footer-info-single p {
+font-size: 8px;
+line-height: 20px;
+color: #aaa; }
+footer.nb-footer .copyright {
+margin-top: 15px;
+background: #111;
+padding: 7px 0;
+color: #999; }
+footer.nb-footer .copyright p {
+margin: 0;
+padding: 0; }

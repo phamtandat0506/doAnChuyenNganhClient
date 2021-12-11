@@ -1,0 +1,4 @@
+export const FETCH_LAPTOP =  'FETCH_LAPTOP'
+export const ADD_LAPTOP = 'ADD_LAPTOP'
+export const UPDATE_LAPTOP = 'UPDATE_LAPTOP'
+export const DELETE_LAPTOP = 'DELETE_LAPTOP'
