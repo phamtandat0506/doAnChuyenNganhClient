@@ -38,21 +38,21 @@ class BottomContentRight extends Component {
                 <hr />
                 
                   {this.state.laptops.map((item,index) => {
-                      var num1 = Math.floor(Math.random() * 10);
-                      var num2 = Math.floor(Math.random() * 10);
-                      var num3 = Math.floor(Math.random() * 10);
-                      console.log(num1);
-                      console.log(num2);
-                      console.log(num3);
-                      if(index ===  num1 || index ===  num2  || index ===  num3 ){
+                      // var num1 = Math.floor(Math.random() * 10);
+                      // var num2 = Math.floor(Math.random() * 10);
+                      // var num3 = Math.floor(Math.random() * 10);
+                      // console.log(num1);
+                      // console.log(num2);
+                      // console.log(num3);
+                      if(index <= 2){
                         return (
                           <ProductItem key={index}
-                        id={item.ID_LAPTOP}
-                        img={item.IMG}
-                        price={item.GIA_LAPTOP}
-                        name={item.TEN_LAPTOP}
-                        products={item}
-                      >
+                            id={item.ID_LAPTOP}
+                            img={item.IMG}
+                            price={item.GIA_LAPTOP}
+                            name={item.TEN_LAPTOP}
+                            products={item}
+                          >
                         
                       </ProductItem>
                         )
@@ -93,13 +93,13 @@ class BottomContentRight extends Component {
                 <hr />
                 
                   {this.state.laptops.map((item,index) => {
-                      var num1 = Math.floor(Math.random() * 10);
-                      var num2 = Math.floor(Math.random() * 10);
-                      var num3 = Math.floor(Math.random() * 10);
-                      console.log(num1);
-                      console.log(num2);
-                      console.log(num3);
-                      if(index ===  num1 || index ===  num2  || index ===  num3 ){
+                      // var num1 = Math.floor(Math.random() * 10);
+                      // var num2 = Math.floor(Math.random() * 10);
+                      // var num3 = Math.floor(Math.random() * 10);
+                      // console.log(num1);
+                      // console.log(num2);
+                      // console.log(num3);
+                      if(index <= 2 ){
                         return (
                           <ProductItem key={index}
                         id={item.ID_LAPTOP}

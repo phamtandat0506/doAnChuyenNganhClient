@@ -35,7 +35,7 @@ class ProductItem extends Component {
 
   giaTien = (flo) => {
     return(flo.toLocaleString("en"))
-}
+  }
 
   render() {
 
@@ -58,7 +58,7 @@ class ProductItem extends Component {
                   </div>
                 <Link to={"/chi-tiet/" + this.chuyenDoiURL(name) + "." +id+ ".html"} className="tag-a">Chi tiết sản phẩm</Link>
                 <div className="clearfix"> </div>
-                </div>
+              </div>
             </div>
             </div>
         </div>

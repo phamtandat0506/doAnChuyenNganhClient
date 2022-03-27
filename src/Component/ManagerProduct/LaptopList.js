@@ -17,32 +17,41 @@ class LapTopList extends Component {
             MOTA_LAPTOP: '',
             GIA_LAPTOP: '',
             IMG: '',
-            ID_LOAI: ''
+            ID_LOAI: '',
+            loais: []
         }
       }
 
     componentDidMount() {
         axios.get('/api/laptop')
-                .then(res => {
-                const laptop = res.data.products
-                //console.log(res.data.products)
-                this.setState({laptops : laptop})
-                //this.props.fetchAllLaptops(res.data.laptops)
-                })
-                .catch(error => console.log(error));
-                axios.get('/api/loai')
-                .then(res => {
-                   const loais = res.data.loais;
-                   //console.log(res.data.loais)
-                   this.setState({ loais :loais });
-                 })
-                .catch(error => console.log(error));
+        .then(res => {
+        const laptop = res.data.products
+        //console.log(res.data.products)
+        this.setState({laptops : laptop})
+        //this.props.fetchAllLaptops(res.data.laptops)
+        })
+        .catch(error => console.log(error));
+        axios.get('/api/loai')
+        .then(res => {
+            const loais = res.data.loais;
+            //console.log(res.data.loais)
+            this.setState({ loais :loais });
+            })
+        .catch(error => console.log(error));
+
+        axios.get('/api/loai')
+            .then(res => {
+            const loais = res.data.loais;
+            console.log(res.data.loais)
+            this.setState({ loais :loais });
+            })
+            .catch(error => console.log(error));
     }
 
     componentWillUnmount = () => {
         Modal.setAppElement('body')
     }
-
+ 
     openModal = (item) => {
         this.setState({
             modalIsOpen: true,
@@ -109,31 +118,31 @@ class LapTopList extends Component {
     handleInsertSubmit = (e) => {
         e.preventDefault();
         var a = false
-        if(document.getElementById("id").value == ""){
+        if(document.getElementById("id").value === ""){
             alert("Hãy nhập đầy đủ id!")
             a = false
         }
-        if(document.getElementById("name").value == ""){
+        if(document.getElementById("name").value === ""){
             alert("Hãy nhập đầy đủ Tên!")
             a = false
         }
-        if(document.getElementById("shortdes").value == ""){
+        if(document.getElementById("shortdes").value === ""){
             alert("Hãy nhập đầy đủ mô tả ngắn!")
             a = false
         }
-        if(document.getElementById("desDetail").value == ""){
+        if(document.getElementById("desDetail").value === ""){
             alert("Hãy nhập đầy đủ mô tả chi tiết!")
             a = false
         }
-        if(document.getElementById("price").value == ""){
+        if(document.getElementById("price").value === ""){
             alert("Hãy nhập đủ giá và nhập bằng số dương!")
             a = false
         }
-        if(document.getElementById("img").value == ""){
+        if(document.getElementById("img").value === ""){
             alert("Hãy nhập đủ ảnh bằng link!")
             a = false
         }
-        if(document.getElementById("loai").value == ""){
+        if(document.getElementById("loai").value === ""){
             alert("Hãy chọn loại Laptop!")
             a = false
         }
@@ -141,7 +150,7 @@ class LapTopList extends Component {
             a = true
         }
         
-        if(a == false){
+        if(a === false){
             console.log(a)
         }else{
             const newLaptop = {
@@ -197,6 +206,8 @@ class LapTopList extends Component {
         
         var {laptops} = this.state
         console.log(laptops);
+        var {loais} = this.state
+        console.log(loais);
         //console.log(laptops);
     
         return(
@@ -283,10 +294,17 @@ class LapTopList extends Component {
                                     /> */}
                                 <select className="form-control"  name="txtIdLoai" id="loai" onChange={this.handleInputChange}>
                                     <option value="">Chọn</option>
-                                    <option value="in">IN</option>
-                                    <option value="vos">VOS</option>
-                                    <option value="gm">GM</option>
+                                {/**<option value="in">Inspiron</option>
+                                    <option value="vos">Vostro</option>
+                                    <option value="gm">Gaming</option> */}
+                                    {loais.map((item, index) => {
+                                        return (
+                                                <option value={item.ID_LOAI} key={index}>{item.TEN_LOAI}</option>
+                                        )
+                                    })}
                                 </select>
+
+                                
                                
                             </div>
                             <div className="form-group">
@@ -428,12 +446,7 @@ class LapTopList extends Component {
                                     value={this.state.ID_LOAI}
                                     onChange={this.handleInputChange}
                                     />
-                               {/** <select className="form-control"  name="txtIdLoai" id="loai" onChange={this.handleInputChange}>
-                                    <option value="">Chọn</option>
-                                    <option value="in">IN</option>
-                                    <option value="vos">VOS</option>
-                                    <option value="gm">GM</option> 
-                                </select>*/}
+
                             
                             </div>
                             <div className="form-group">

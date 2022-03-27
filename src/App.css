@@ -267,6 +267,33 @@ body
     margin: 3px;
 }
 
+#br-pr 
+{
+    
+    height: 10px;
+    width: 50px;
+    border: solid 2px #999;
+    margin: 2px;
+}
+
+#btn-qua 
+{
+    border-width: 0px;
+    background-color: rgb(107, 107, 255);
+    border-radius: 30%;
+}
+
+#link 
+{
+    display: none;
+}
+
+#btn 
+{
+    display: none;
+}
+
+
 /*/////////////////////////////////////////////////////////////*/
 
 .span-or {

@@ -16,7 +16,7 @@ class TopLeftDetail extends Component {
                 <div className="item">
                     <img src={`${img}`} alt="Chicago" />
                 </div>
-                <div className="item">
+                <div className="item"> 
                     <img src={`${img}`} alt="New York" />
                 </div>
             </div>

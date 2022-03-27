@@ -56,6 +56,14 @@ class LapTopList extends Component {
     handleEditSubmit = (e) => {
         e.preventDefault();
 
+        let key = true 
+        if(document.getElementById("TEN_LOAI").value === ''){
+            key = false 
+        }
+
+        if(key == false ){
+            alert("KKhông được bỏ trống tên loại sản phẩm")
+        }else {
             const loaiUpdate = {
                 ID_LOAI: this.state.ID_LOAI,
                 TEN_LOAI: this.state.TEN_LOAI
@@ -76,6 +84,9 @@ class LapTopList extends Component {
                 this.closeModal()
             })
             .catch(error => console.log(error));
+        }
+
+            
 
     }
 
@@ -83,18 +94,18 @@ class LapTopList extends Component {
         e.preventDefault();
 
         var a = true
-        if(document.getElementById("id").value == ""){
+        if(document.getElementById("id").value === ""){
             alert("Hãy nhập đầy đủ id loại!")
            
             a = false
         }
-        if(document.getElementById("name").value == ""){
+        if(document.getElementById("name").value === ""){
             alert("Hãy nhập đầy đủ tên loại!")
             
             a = false
         }
         
-        if(a== false){
+        if(a === false){
             console.log(a);
         }else{
             const newLoai = {
